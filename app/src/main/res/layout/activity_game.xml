@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_game"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".GameActivity">
+
+    <com.example.nine_men_morris.BoardView
+        android:id="@+id/drawView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/playerTurn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/playerRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/playerTurn"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/blueCheck1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:id="@+id/blueCheck9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/blue" />
+
+    <ImageView
+        android:id="@+id/redCheck9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/red" />
+
+</RelativeLayout>
